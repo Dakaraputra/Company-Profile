@@ -6,23 +6,30 @@
     <meta charset="utf-8" />
     <title>PT.Arunika Digital</title>
     <link rel="stylesheet" href="company/style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <img src="assets\companyLogoya.png" id="logoCompany">
+<body class="font-sans bg-gray-50 scroll-smooth">
+    <header class="relative flex sticky top-0 items-center bg-gradient-to-r from-blue-300 via-blue-100 to-orange-100 px-8 py-4 shadow-md">
+        <!-- LOGO -->
+        <div class="flex items-center space-x-3">
+            <a href="companyProfile.html">
+                <img src="assets\companyLogoya.png" id="logoCompany" class="w-32 -my-2">
+            </a>
+        </div>
         <div>
-            <p>
+            <p class="text-[#111111] text-sm">
                 Solusi Digital · Web · Mobile · Cloud
             </p>
         </div>
-        <nav>
-            <ul>
-                <a href="companyProfile.html">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#service">Service</a>
-                <a href="#history">History</a>
-                <a href="#contact">Contact</a>
+        <!-- NAVIGASI -->
+        <nav class="ml-auto"> <!--  margin left auto dorong nav ke kanan window -->
+            <ul class="flex space-x-6 font-semibold">
+                <li><a href="companyProfile.html" class="text-gray-700 hover:text-orange-700 hover:rounded-sm transition">Home</a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-orange-700 hover:rounded-sm transition">About Us</a></li>
+                <li><a href="#service" class="text-gray-700 hover:text-orange-700 hover:rounded-sm transition">Service</a></li>
+                <li><a href="#history" class="text-gray-700 hover:text-orange-700 hover:rounded-sm transition">History</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-orange-700 hover:rounded-sm transition">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -114,5 +121,6 @@
     </main>
     <footer>Copyright © 2026 PT.Arunika Digital</footer>
 </body>
+
 
 </html>
